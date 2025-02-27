@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class Dropdown_Discussion {
     /**
      * Dropdowns
-     *      -> it is an element with selected-tag in the dom
+     *      -> it is an element with select-tag in the dom
      *      -> All the values in the dropdown (or within select-tag) are always going to be with option-tag
      *      -> To handle/automate dropdown, we use Select-Class (from Selenium)
      *

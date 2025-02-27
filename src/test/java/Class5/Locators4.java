@@ -1,6 +1,6 @@
-package Class4;
+package Class5;
 
-public class Locators3 {
+public class Locators4 {
     /**
      * Link to install SelectorsHub
      *
@@ -27,6 +27,10 @@ public class Locators3 {
      * To find a specific webElement using locator
      * method: findElement()
      * return-type: WebElement
+     *
+     * To find more than one webElements using a locator
+     * method: findElements()
+     * return-type: List<WebElement>
      */
 
     /**
@@ -106,7 +110,6 @@ public class Locators3 {
      * --> Find the tag(tagName) in the dom, which has text-value starting with "starting portion of text value"
      * Example: //div[starts-with(text() , 'The password')]
      *
-     *
      * 7. using and/or operator:
      * In selector's hub, create xpath like -> //tagName[@attributeName='attribute value' and text()='Text Value']
      * --> Find the tag(tagName) in the dom, which has attribute(attributeName) with value equals to 'attribute value' AND text-value equals to 'Text Value'
@@ -133,7 +136,27 @@ public class Locators3 {
      * How to create xpath to reach tag4 (under tag4)?
      * //tag43[text()='Text Value']//tag23[@attr22='val22']//tag4[@attr='val']
      *
+     * 10. using following axes:
+     * In selector's hub, create xpath like: //tagName[condition(s)]/following::tagName2[condition(s)]
+     * --> Find the tag(tagName) in the dom which satisfies given condition(s)
+     *      then go to find the tag(tagName2) which appears after the tag(tagName) in the dom and satisfies given condition(s)
+     * //a[text()='Create a Page']/following::a[text()='Log in']
      *
+     * 11. using preceding axes:
+     * In selector's hub, create xpath like: //tagName[condition(s)]/preceding::tagName2[condition(s)]
+     * --> Find the tag(tagName) in the dom which satisfies given condition(s)
+     *      then go to find the tag(tagName2) which appears before the tag(tagName) in the dom and satisfies given condition(s)
+     * //a[text()='Create a Page']/preceding::a[text()='Log in']
+     *
+     * 12. using following-sibling axes:
+     * In selector's hub, create xpath like: //tagName[condition(s)]/following-sibling::tagName2[condition(s)]
+     * --> Find the tag(tagName) in the dom which satisfies given condition(s)
+     *      then find it's following-sibling-tag(tagName2) which satisfies given condition(s)
+     *
+     * 13. using preceding-sibling axes:
+     * In selector's hub, create xpath like: //tagName[condition(s)]/preceding-sibling::tagName2[condition(s)]
+     * --> Find the tag(tagName) in the dom which satisfies given condition(s)
+     *      then find it's preceding-sibling-tag(tagName2) which satisfies given condition(s)
      */
 
     /**
